@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
@@ -62,12 +63,14 @@
             Front-end junior <br>
           </div>
           <p class="text-gray-300">Front End Developher</p>
-           <div class="flex items-center justify-center gap-4  bg-blue-700 rounded-sm w-full md:w-1/2 mt-4">
-            <a href="" class="cursor-pointer">
-              <i class="fab fa-whatsapp"></i>
-              <button class="p-2 text-sm cursor-pointer">Contact me</button>
+           <div class="relative bg-blue-700 rounded-sm w-full md:w-1/2 mt-4">
+            <a href="" class="absolute top-2 right-4">
+              <button class="flex items-center justify-center gap-2 w-32 h-10 bg-blue-500 text-white rounded-md text-sm cursor-pointer">
+                <i class="fab fa-whatsapp"></i>
+                  Contact me
+              </button>
             </a>
-          </div> 
+          </div>
         </div>
 
         <div class="">
@@ -190,5 +193,9 @@
       </p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+</script>
   </body>
 </html>
